@@ -258,7 +258,7 @@ int main(int argc, const char * argv[]) {
 
 #define SHOW(SIG) LOG("%s", [[SIG xpmargs_mutableStringByIndentingToWidth:2 lineLength:ws.ws_col] UTF8String])
 
-            LOG("optool v0.2\n");
+            LOG("optool v0.3\n");
             LOG("USAGE:");
             SHOW(@"install -c <command> -p <payload> -t <target> [-o=<output>] [-b] [--resign] Inserts an LC_LOAD command into the target binary which points to the payload. This may render some executables unusable.");
             SHOW(@"uninstall -p <payload> -t <target> [-o=<output>] [-b] [--resign] Removes any LC_LOAD commands which point to a given payload from the target binary. This may render some executables unusable.");
